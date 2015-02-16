@@ -4,7 +4,7 @@ OXID Academy Sample Modules: Example extension for oxArticle
 #Description
 
 Sample Module for training purposes.
-Extends the shop\'s oxArticle model.
+Extends the shop's oxArticle model.
 
 #Use
 
@@ -15,5 +15,5 @@ Extends the shop\'s oxArticle model.
 
 #Compatibility:
 
- * Requires OXID eShop CE|PE 4.9 & EE 5.2
+ * Requires OXID eShop CE/PE 4.9 / EE 5.2
  * PHP 5.3 or higher
