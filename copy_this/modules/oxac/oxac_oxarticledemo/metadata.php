@@ -1,5 +1,6 @@
 <?php
-$sMetadataVersion = '1.2';
+
+$sMetadataVersion = '1.1';
 
 /**
  * Module information
@@ -15,12 +16,12 @@ $aModule = array(
 				'de'		=>	'Muster',
 		),
 		'thumbnail'		=> '',
-		'version'		=> '0.1',
+		'version'		=> '0.1.0.1',
 		'author'		=> 'Johannes Ackermann',
 		'url'			=> 'http://www.oxid-esales.com',
 		'email' 		=> 'johannes.ackermann@oxid-esales.com',
 		'extend'		=> array(
-				'oxarticle'					=>	'oxac/oxac_oxarticledemo/models/oxac_oxarticledemo',
+				'oxarticle'			=>	'oxac/oxac_oxarticledemo/models/oxac_oxarticledemo',
 		),
 		'blocks'		=>	array(
 				array(
