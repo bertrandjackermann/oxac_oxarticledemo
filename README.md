@@ -12,8 +12,7 @@ Extends the shop's oxArticle model.
  * In the shop admin, open "Extensions", "Modules", select "Example extension for oxArticle" and click "activate".
  * The module contains a block element that will hook into the details page.
 
+# Compatibility:
 
-#Compatibility:
-
- * Requires OXID eShop CE/PE 4.9 / EE 5.2
- * PHP 5.3 or higher
+* Requires OXID eShop CE/PE/EE 6.0.x
+* PHP 5.6 or higher
