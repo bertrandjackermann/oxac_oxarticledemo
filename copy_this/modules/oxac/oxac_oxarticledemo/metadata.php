@@ -1,33 +1,36 @@
 <?php
 
-$sMetadataVersion = '1.1';
+/**
+ * Metadata version
+ */
+$sMetadataVersion = '2.0';
 
 /**
  * Module information
  */
-$aModule = array(
-		'id'			=> 'oxac_oxarticledemo',
-		'title'			=> array(
-				'en'		=>	'Example extension for <i>oxArticle</i>',
-				'de'		=>	'Beispiel-Erweiterung für <i>oxArticle</i>',
-		),
-		'description'	=> array(
-				'en'		=>	'Demo extension',
-				'de'		=>	'Muster',
-		),
-		'thumbnail'		=> '',
-		'version'		=> '0.1.0.1',
-		'author'		=> 'Johannes Ackermann',
-		'url'			=> 'http://www.oxid-esales.com',
-		'email' 		=> 'johannes.ackermann@oxid-esales.com',
-		'extend'		=> array(
-				'oxarticle'			=>	'oxac/oxac_oxarticledemo/models/oxac_oxarticledemo',
-		),
-		'blocks'		=>	array(
-				array(
-						'template'	=> 'page/details/inc/productmain.tpl',
-						'block'		=> 'details_productmain_title',
-						'file'		=> 'views/blocks/productmain_title_ext.tpl'
-				),
-		),
-);
+$aModule = [
+    'id'			=>  'oxac_oxarticledemo',
+    'title'			=>  [
+        'en'		=>  'Example extension for <i>oxArticle</i>',
+        'de'		=>  'Beispiel-Erweiterung für <i>oxArticle</i>',
+    ],
+    'description'	=>  [
+        'en'		=>	'Demo extension',
+        'de'		=>	'Muster',
+    ],
+    'thumbnail'		=>  '',
+    'version'		=>  '1.0.0',
+    'author'		=>  'Johannes Ackermann',
+    'url'			=>  'http://www.oxid-esales.com',
+    'email' 		=>  'johannes.ackermann@oxid-esales.com',
+    'extend'		=>  [
+        \OxidEsales\Eshop\Application\Model\Article::class  =>	OxidEsales\OxidAcademy\ArticleDemoModule\Model\Article::class,
+    ],
+    'blocks'		=>	[
+        [
+            'template'	=> 'page/details/inc/productmain.tpl',
+            'block'		=> 'details_productmain_title',
+            'file'		=> 'views/blocks/productmain_title_ext.tpl'
+        ],
+    ],
+];
